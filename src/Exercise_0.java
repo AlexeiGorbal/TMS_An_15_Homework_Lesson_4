@@ -14,8 +14,8 @@ public class Exercise_0 {
         }
         System.out.print("Enter the number you want to check: ");
         int number = scanner.nextInt();
-        int pr = Arrays.binarySearch(array, number);
-        if (array[pr] == number) {
+        int bs = Arrays.binarySearch(array, number);
+        if (array[bs] == number) {
             System.out.println("This number is in the array");
         } else {
             System.out.println("This number is not in the array");
