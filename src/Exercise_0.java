@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercise_0 {
@@ -13,12 +14,11 @@ public class Exercise_0 {
         }
         System.out.print("Enter the number you want to check: ");
         int number = scanner.nextInt();
-        for (int numberTwo : array) {
-            if (numberTwo == number) {
-                System.out.println("This number is in the array");
-                return;
-            }
+        int pr = Arrays.binarySearch(array, number);
+        if (array[pr] == number) {
+            System.out.println("This number is in the array");
+        } else {
+            System.out.println("This number is not in the array");
         }
-        System.out.println("This number is not in the array");
     }
 }
